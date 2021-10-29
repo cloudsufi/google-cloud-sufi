@@ -1,0 +1,35 @@
+{
+	"DELIMITER":";",
+	"NO_DATA":"",
+	"QUERY_TABLE":"RFCDES",
+	"ROWCOUNT":"9999",
+	"ROWSKIPS":"0",
+	"FIELDS":[
+		{
+			"FIELDNAME":"RFCDEST",
+			"OFFSET":"000000",
+			"LENGTH":"000032",
+			"TYPE":"C",
+			"FIELDTEXT":""
+		},
+		{
+			"FIELDNAME":"RFCTYPE",
+			"OFFSET":"000033",
+			"LENGTH":"000001",
+			"TYPE":"C",
+			"FIELDTEXT":""
+		},
+		{
+			"FIELDNAME":"RFCOPTIONS",
+			"OFFSET":"000035",
+			"LENGTH":"000250",
+			"TYPE":"C",
+			"FIELDTEXT":""
+		}
+	],
+	"OPTIONS":[
+		{
+			"TEXT":"RFCTYPE = 'T'"
+		}
+	]
+}

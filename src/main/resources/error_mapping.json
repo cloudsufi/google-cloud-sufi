@@ -1,0 +1,74 @@
+{
+  "101": {
+    "primaryCode": "650",
+    "primaryMessage": "Exception caused due to Missing/Invalid parameters.",
+    "secondaryCode": "101",
+    "secondaryMessage": ""
+  },
+  "102": {
+    "primaryCode": "650",
+    "primaryMessage": "Exception caused due to network problems, connection breakdowns, gateway problems, in-availability of the remote SAP system, etc.",
+    "secondaryCode": "102",
+    "secondaryMessage": "Exception thrown from adapter."
+  },
+  "103": {
+    "primaryCode": "651",
+    "primaryMessage": "Exception caused due to network problems, connection breakdowns, gateway problems, in-availability of the remote SAP system, etc.",
+    "secondaryCode": "103",
+    "secondaryMessage": "Authorization failures during the logon phase in the ABAP backend. Usually caused by unknown user name (typos), wrong password, invalid certificates, expired logon tickets"
+  },
+  "104": {
+    "primaryCode": "653",
+    "primaryMessage": "RFC payload or authorization issue.",
+    "secondaryCode": "104",
+    "secondaryMessage": "No RFC authorization for function module."
+  },
+  "106": {
+    "primaryCode": "650",
+    "primaryMessage": "Exception thrown from adapter.",
+    "secondaryCode": "106",
+    "secondaryMessage": "Indicates that JCo has issues with resources, such as connections in a connection pool, destinations, or servers."
+  },
+  "111": {
+    "primaryCode": "651",
+    "primaryMessage": "ABAP class exception has been thrown by a function module in the remote system.",
+    "secondaryCode": "111",
+    "secondaryMessage": "ABAP class exception has been thrown by a function module in the remote system."
+  },
+  "120": {
+    "primaryCode": "650",
+    "primaryMessage": "Exception thrown from adapter.",
+    "secondaryCode": "120",
+    "secondaryMessage": "Exception thrown from adapter."
+  },
+  "122": {
+    "primaryCode": "651",
+    "primaryMessage": "Payload Conversion issue (Invalid Payload).",
+    "secondaryCode": "122",
+    "secondaryMessage": "Payload Conversion issue (Invalid Payload)."
+  },
+  "123": {
+    "primaryCode": "651",
+    "primaryMessage": "Function Not Found.",
+    "secondaryCode": "123",
+    "secondaryMessage": "Function Not Found."
+  },
+  "1000": {
+    "primaryCode": "650",
+    "primaryMessage": "Exception thrown from adapter.",
+    "secondaryCode": "1000",
+    "secondaryMessage": ""
+  },
+  "1001": {
+    "primaryCode": "652",
+    "primaryMessage": "Schema not found.",
+    "secondaryCode": "1001",
+    "secondaryMessage": "Invalid name."
+  },
+  "1002": {
+    "primaryCode": "652",
+    "primaryMessage": "Schema not found.",
+    "secondaryCode": "1002",
+    "secondaryMessage": "IDOC Segment Issue, Segment {0} metadata for current idoc type does not match with release version configured in adapter endpoint or provided segment release is Invalid. Please check and verify again."
+  }
+}

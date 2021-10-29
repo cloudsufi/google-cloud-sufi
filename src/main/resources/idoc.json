@@ -1,0 +1,326 @@
+[
+  {
+    "minLength": "0",
+    "DESCRP": "Name of table structure",
+    "hint": "Name of table structure",
+    "optional": true,
+    "name": "TABNAM",
+    "maxLength": 10,
+    "type": "string"
+  },
+  {
+    "minLength": "0",
+    "DESCRP": "Client",
+    "hint": "Client",
+    "optional": true,
+    "name": "MANDT",
+    "maxLength": 3,
+    "type": "string"
+  },
+  {
+    "minLength": "0",
+    "DESCRP": "IDoc number",
+    "hint": "IDoc number",
+    "optional": true,
+    "name": "DOCNUM",
+    "maxLength": 16,
+    "type": "string"
+  },
+  {
+    "minLength": "0",
+    "DESCRP": "Release number",
+    "hint": "Release number",
+    "optional": true,
+    "name": "DOCREL",
+    "maxLength": 4,
+    "type": "string"
+  },
+  {
+    "minLength": "0",
+    "DESCRP": "Status of IDoc",
+    "hint": "Status of IDoc",
+    "optional": true,
+    "name": "STATUS",
+    "maxLength": 2,
+    "type": "string"
+  },
+  {
+    "minLength": "0",
+    "DESCRP": "Direction of communication",
+    "hint": "Direction of communication",
+    "optional": true,
+    "name": "DIRECT",
+    "maxLength": 1,
+    "type": "string"
+  },
+  {
+    "minLength": "0",
+    "DESCRP": "Output mode",
+    "hint": "Output mode",
+    "optional": true,
+    "name": "OUTMOD",
+    "maxLength": 1,
+    "type": "string"
+  },
+  {
+    "minLength": "0",
+    "DESCRP": "Overriding in inbound processing",
+    "hint": "Overriding in inbound processing",
+    "optional": true,
+    "name": "EXPRSS",
+    "maxLength": 1,
+    "type": "string"
+  },
+  {
+    "minLength": "0",
+    "DESCRP": "Test flag",
+    "hint": "Test flag",
+    "optional": true,
+    "name": "TEST",
+    "maxLength": 1,
+    "type": "string"
+  },
+  {
+    "minLength": "0",
+    "DESCRP": "Basic IDoc type",
+    "hint": "Basic IDoc type",
+    "optional": true,
+    "name": "IDOCTYP",
+    "maxLength": 30,
+    "type": "string"
+  },
+  {
+    "minLength": "0",
+    "DESCRP": "Extension type",
+    "hint": "Extension type",
+    "optional": true,
+    "name": "CIMTYP",
+    "maxLength": 30,
+    "type": "string"
+  },
+  {
+    "minLength": "0",
+    "DESCRP": "Message type",
+    "hint": "Message type",
+    "optional": true,
+    "name": "MESTYP",
+    "maxLength": 30,
+    "type": "string"
+  },
+  {
+    "minLength": "0",
+    "DESCRP": "Message code",
+    "hint": "Message code",
+    "optional": true,
+    "name": "MESCOD",
+    "maxLength": 3,
+    "type": "string"
+  },
+  {
+    "minLength": "0",
+    "DESCRP": "Message function",
+    "hint": "Message function",
+    "optional": true,
+    "name": "MESFCT",
+    "maxLength": 3,
+    "type": "string"
+  },
+  {
+    "minLength": "0",
+    "DESCRP": "EDI standard flag",
+    "hint": "EDI standard flag",
+    "optional": true,
+    "name": "STD",
+    "maxLength": 1,
+    "type": "string"
+  },
+  {
+    "minLength": "0",
+    "DESCRP": "EDI standard version and release",
+    "hint": "EDI standard version and release",
+    "optional": true,
+    "name": "STDVRS",
+    "maxLength": 6,
+    "type": "string"
+  },
+  {
+    "minLength": "0",
+    "DESCRP": "EDI standard message type",
+    "hint": "EDI standard message type",
+    "optional": true,
+    "name": "STDMES",
+    "maxLength": 6,
+    "type": "string"
+  },
+  {
+    "minLength": "0",
+    "DESCRP": "Sender port",
+    "hint": "Sender port",
+    "optional": true,
+    "name": "SNDPOR",
+    "maxLength": 10,
+    "type": "string"
+  },
+  {
+    "minLength": "0",
+    "DESCRP": "Partner type of sender",
+    "hint": "Partner type of sender",
+    "optional": true,
+    "name": "SNDPRT",
+    "maxLength": 2,
+    "type": "string"
+  },
+  {
+    "minLength": "0",
+    "DESCRP": "Partner function of sender",
+    "hint": "Partner function of sender",
+    "optional": true,
+    "name": "SNDPFC",
+    "maxLength": 2,
+    "type": "string"
+  },
+  {
+    "minLength": "0",
+    "DESCRP": "Partner number of sender",
+    "hint": "Partner number of sender",
+    "optional": true,
+    "name": "SNDPRN",
+    "maxLength": 10,
+    "type": "string"
+  },
+  {
+    "minLength": "0",
+    "DESCRP": "Sender address",
+    "hint": "Sender address",
+    "optional": true,
+    "name": "SNDSAD",
+    "maxLength": 21,
+    "type": "string"
+  },
+  {
+    "minLength": "0",
+    "DESCRP": "Logical address of sender",
+    "hint": "Logical address of sender",
+    "optional": true,
+    "name": "SNDLAD",
+    "maxLength": 70,
+    "type": "string"
+  },
+  {
+    "minLength": "0",
+    "DESCRP": "Receiver port",
+    "hint": "Receiver port",
+    "optional": true,
+    "name": "RCVPOR",
+    "maxLength": 10,
+    "type": "string"
+  },
+  {
+    "minLength": "0",
+    "DESCRP": "Partner type of receiver",
+    "hint": "Partner type of receiver",
+    "optional": true,
+    "name": "RCVPRT",
+    "maxLength": 2,
+    "type": "string"
+  },
+  {
+    "minLength": "0",
+    "DESCRP": "Partner function of receiver",
+    "hint": "Partner function of receiver",
+    "optional": true,
+    "name": "RCVPFC",
+    "maxLength": 2,
+    "type": "string"
+  },
+  {
+    "minLength": "0",
+    "DESCRP": "Partner number of receiver",
+    "hint": "Partner number of receiver",
+    "optional": true,
+    "name": "RCVPRN",
+    "maxLength": 10,
+    "type": "string"
+  },
+  {
+    "minLength": "0",
+    "DESCRP": "Receiver address",
+    "hint": "Receiver address",
+    "optional": true,
+    "name": "RCVSAD",
+    "maxLength": 21,
+    "type": "string"
+  },
+  {
+    "minLength": "0",
+    "DESCRP": "Logical address of receiver",
+    "hint": "Logical address of receiver",
+    "optional": true,
+    "name": "RCVLAD",
+    "maxLength": 70,
+    "type": "string"
+  },
+  {
+    "minLength": "0",
+    "DESCRP": "Created date",
+    "hint": "Created date",
+    "optional": true,
+    "name": "CREDAT",
+    "maxLength": 8,
+    "type": "date"
+  },
+  {
+    "minLength": "0",
+    "DESCRP": "Created time",
+    "hint": "Created time",
+    "optional": true,
+    "name": "CRETIM",
+    "maxLength": 6,
+    "type": "datetime"
+  },
+  {
+    "minLength": "0",
+    "DESCRP": "EDI interchange transmission file",
+    "hint": "EDI interchange transmission file",
+    "optional": true,
+    "name": "REFINT",
+    "maxLength": 14,
+    "type": "string"
+  },
+  {
+    "minLength": "0",
+    "DESCRP": "EDI message group",
+    "hint": "EDI message group",
+    "optional": true,
+    "name": "REFGRP",
+    "maxLength": 14,
+    "type": "string"
+  },
+  {
+    "minLength": "0",
+    "DESCRP": "EDI message",
+    "hint": "EDI message",
+    "optional": true,
+    "name": "REFMES",
+    "maxLength": 14,
+    "type": "string"
+  },
+  {
+    "minLength": "0",
+    "DESCRP": "Key for external message archive",
+    "hint": "Key for external message archive",
+    "optional": true,
+    "name": "ARCKEY",
+    "maxLength": 70,
+    "type": "string"
+  },
+  {
+    "minLength": "0",
+    "DESCRP": "Serialization",
+    "hint": "Serialization",
+    "optional": true,
+    "name": "SERIAL",
+    "maxLength": 20,
+    "type": "string"
+  }
+]

@@ -1,0 +1,119 @@
+{
+  "DATA": [
+    {
+      "WA": "DOCUMENTATION_HELP              ;T;H=%%SAPGUI%%,N=help_04.exe,"
+    },
+    {
+      "WA": "EU_SCRP_WN32                    ;T;H=%%SAPGUI%%,N=gnetx.exe,"
+    },
+    {
+      "WA": "LOCAL_EXEC                      ;T;N=rfcexec,"
+    },
+    {
+      "WA": "LOCAL_PRINT                     ;T;H=%%SAPGUI%%,N=lprint"
+    },
+    {
+      "WA": "MDX PARSER                      ;T;N=mdxsvr,i=Y,"
+    },
+    {
+      "WA": "C_TP_00_vhcals4hci              ;T;N=/usr/sap/S4H/D00/exe/tp,d=2"
+    },
+    {
+      "WA": "R3_WINDOWS_SERVER               ;T;H=%%SAPGUI%%,N=wswinsrv.exe,"
+    },
+    {
+      "WA": "SAPFORMS                        ;T;H=%%SAPGUI%%,N=$SHELL\\wdfr3fs.exe,"
+    },
+    {
+      "WA": "SAPGUI                          ;T;l=X"
+    },
+    {
+      "WA": "SAPIRCONTROLLER                 ;T;H=%%SAPGUI%%,N=$SHELL/SAPIRC,"
+    },
+    {
+      "WA": "SAPIRPCFILETRANSFER             ;T;H=%%SAPGUI%%,N=$SHELL/SAPIrFtr,"
+    },
+    {
+      "WA": "SAPJ2EE                         ;T;d=1,o=00000010"
+    },
+    {
+      "WA": "SAPKPROTP                       ;T;N=sapkprotp,e=0,Y=2,h=2,y=-2,z=-2,W=Y,B=N,C=N,E=N,T=N,K=Y,s=N,u=N,1=00,q=0,i=N,b=N,k=N,d=2,j=N,"
+    },
+    {
+      "WA": "SAP_KEN_IOE                     ;T;H=%%SAPGUI%%,N=$SHELL/SAPIOE.EXE,"
+    },
+    {
+      "WA": "SAP_KW_HTMLEDITOR               ;T;H=%%SAPGUI%%,N=$IWBPath/kw_htmleditor\\KW_HtmlEditor.exe,Y=2,h=2,y=2000,z=-2,W=Y,B=N,C=N,E=N,T=N,K=Y,s=N,u=N,1=00,q=0,i=N,b=N,k=N,d=2,j=N,"
+    },
+    {
+      "WA": "SAP_SCHEDULE_16                 ;T;H=%%SAPGUI%%,N=SAPKALE.EXE,"
+    },
+    {
+      "WA": "SAP_SCHEDULE_32                 ;T;H=%%SAPGUI%%,N=SCHELAUN.EXE,"
+    },
+    {
+      "WA": "SAP_SSFATAS                     ;T;N=$SAPEXE/ssfrfc,"
+    },
+    {
+      "WA": "SAP_SSFATGUI                    ;T;H=%%SAPGUI%%,N=$SAPGUI/ssfrfc,"
+    },
+    {
+      "WA": "SERVER_EXEC                     ;T;S=sa,N=rfcexec,"
+    },
+    {
+      "WA": "SLD_NUC                         ;T;H=%%RFCSERVER%%,N=SLD_NUC,"
+    },
+    {
+      "WA": "SLD_UC                          ;T;H=%%RFCSERVER%%,N=SLD_UC,d=2,"
+    },
+    {
+      "WA": "VFOLDER                         ;T;H=%%SAPGUI%%,N=$SAPGUI/vfolder/vfolder.exe,"
+    },
+    {
+      "WA": "GFW_ITS_RFC_DEST                ;T;H=%%RFCSERVER%%,N=IGS.C53,Y=2,h=2,y=-2,z=-2,W=Y,B=N,C=N,E=N,T=N,K=Y,s=N,u=N,q=0,i=N,b=N,k=N,j=N,"
+    },
+    {
+      "WA": "IGS_RFC_DEST                    ;T;H=%%RFCSERVER%%,N=IGS.S4H"
+    },
+    {
+      "WA": "SAPFTP                          ;T;H=%%SAPGUI%%,N=sapftp,Y=2,h=2,y=-2,z=-2,W=Y,B=N,C=N,E=N,T=N,K=Y,s=N,u=N,q=0,i=N,b=N,k=N,R=N,@=N,j=N,"
+    },
+    {
+      "WA": "GFW_ITS_RFC                     ;T;H=%%RFCSERVER%%,N=IGS.S4H"
+    },
+    {
+      "WA": "lsgoogle                        ;T;H=%%RFCSERVER%%,G=10.132.0.4,g=3300,N=LSGOOGLE,Y=2,h=2,y=-2,z=-2,W=Y,B=N,C=N,E=N,T=N,K=Y,s=N,u=N,1=00,q=0,i=N,b=N,k=N,d=2,j=N,"
+    },
+    {
+      "WA": "LSQUAL                          ;T;H=%%RFCSERVER%%,G=10.132.0.4,g=3300,N=LSQUAL,Y=2,h=2,y=-2,z=-2,W=Y,B=N,C=N,E=N,T=N,K=Y,s=N,u=N,1=00,q=0,i=N,b=N,k=N,d=2,j=N,"
+    }
+  ],
+  "FIELDS": [
+    {
+      "FIELDNAME": "RFCDEST",
+      "OFFSET": "000000",
+      "LENGTH": "000032",
+      "TYPE": "C",
+      "FIELDTEXT": "Logical destination (specified in function call)"
+    },
+    {
+      "FIELDNAME": "RFCTYPE",
+      "OFFSET": "000033",
+      "LENGTH": "000001",
+      "TYPE": "C",
+      "FIELDTEXT": "Type of Entry in RFCDES"
+    },
+    {
+      "FIELDNAME": "RFCOPTIONS",
+      "OFFSET": "000035",
+      "LENGTH": "000250",
+      "TYPE": "C",
+      "FIELDTEXT": "Connection options"
+    }
+  ],
+  "OPTIONS": [
+    {
+      "TEXT": "RFCTYPE = 'T'"
+    }
+  ]
+}

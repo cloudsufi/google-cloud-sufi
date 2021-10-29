@@ -1,0 +1,25 @@
+{
+  "message": "testMessage",
+  "testJcoException": [
+    {
+      "groupId": 102,
+      "key": "testKey",
+      "message": "testMessage"
+    },
+    {
+      "groupId": 103,
+      "key": "testKey",
+      "message": "testMessage"
+    },
+    {
+      "groupId": 111,
+      "key": "testKey",
+      "message": "testMessage"
+    },
+    {
+      "groupId": 106,
+      "key": "testKey",
+      "message": "testMessage"
+    }
+  ]
+}

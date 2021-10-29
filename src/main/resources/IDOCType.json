@@ -1,0 +1,246 @@
+{
+  "00": [
+    "Pending",
+    "IDoc sent from IAP to SAP"
+  ],
+  "01": [
+    "Success",
+    "Outbound IDoc created"
+  ],
+  "02": [
+    "Error",
+    "Error passing data to port"
+  ],
+  "03": [
+    "Success",
+    "Outbound IDoc successfully sent to port"
+  ],
+  "04": [
+    "Error",
+    "within control information on EDI subsystem"
+  ],
+  "05": [
+    "Error",
+    "Error during translation"
+  ],
+  "06": [
+    "Success",
+    "Translation successful."
+  ],
+  "07": [
+    "Error",
+    "Error on syntax check (It's an error status)"
+  ],
+  "08": [
+    "Success",
+    "Syntax check successful"
+  ],
+  "09": [
+    "Error",
+    "Error on interchange handling (It's an error status)"
+  ],
+  "50": [
+    "Success",
+    "Inbound IDoc created"
+  ],
+  "51": [
+    "Error",
+    "inbound IDoc data contains errors"
+  ],
+  "52": [
+    "Error",
+    "Application document partially posted (It's an error status)"
+  ],
+  "53": [
+    "Success",
+    "inbound IDoc posted"
+  ],
+  "10": [
+    "Success",
+    "Interchange handling successful"
+  ],
+  "54": [
+    "Error",
+    "Error during formal application check (It's an error status)"
+  ],
+  "11": [
+    "Error",
+    "Error on dispatch (It's an error status)"
+  ],
+  "55": [
+    "Success",
+    "Formal application check successful"
+  ],
+  "12": [
+    "Success",
+    "Dispatch OK"
+  ],
+  "56": [
+    "Error",
+    "IDoc with errors added (You should never see this error code)"
+  ],
+  "13": [
+    "Success",
+    "Retransmission successful"
+  ],
+  "57": [
+    "Error",
+    "Test IDoc: Error during application check (It's an error status)"
+  ],
+  "14": [
+    "Success",
+    "Interchange Acknowledgement positive"
+  ],
+  "15": [
+    "Error",
+    "Interchange Acknowledgement negative (It's an error status)"
+  ],
+  "16": [
+    "Success",
+    "Functional Acknowledgement positive"
+  ],
+  "17": [
+    "Error",
+    "Functional Acknowledgement negative (It's a warning error status)"
+  ],
+  "18": [
+    "Success",
+    "Triggering EDI subsystem successful"
+  ],
+  "19": [
+    "Success",
+    "Data transfer for test successful"
+  ],
+  "60": [
+    "Error",
+    "syntax check of inbound IDoc"
+  ],
+  "61": [
+    "Error",
+    "Processing inbound IDoc despite syntax error"
+  ],
+  "62": [
+    "Success",
+    "inbound IDoc passed to application"
+  ],
+  "63": [
+    "Error",
+    "passing IDoc to application"
+  ],
+  "20": [
+    "Error",
+    "Error on triggering EDI subsystem (It's an error status)"
+  ],
+  "64": [
+    "Success",
+    "Inbound IDoc ready to be passed to application"
+  ],
+  "21": [
+    "Error",
+    "Error on passing data for test (It's an error status)"
+  ],
+  "65": [
+    "Error",
+    "ALE service - incorrect partner profiles"
+  ],
+  "22": [
+    "Success",
+    "Dispatch successful, acknowledgement still due"
+  ],
+  "66": [
+    "Waiting",
+    "Waiting for predecessor IDoc (Serialization)"
+  ],
+  "23": [
+    "Error",
+    "Error on retransmission (It's an error status)"
+  ],
+  "24": [
+    "Success",
+    "Control information of EDI subsystem successful"
+  ],
+  "68": [
+    "Success",
+    "no further processing"
+  ],
+  "25": [
+    "Error",
+    "Processing despite syntax error (It's a warning error)"
+  ],
+  "69": [
+    "Success",
+    "IDoc was edited"
+  ],
+  "26": [
+    "Error",
+    "during syntax check of outbound IDoc"
+  ],
+  "27": [
+    "Error",
+    "Error in ALE dispatch level (It's an error status)"
+  ],
+  "29": [
+    "Error",
+    "ALE service"
+  ],
+  "70": [
+    "Success",
+    "Original of an IDoc which was edited. It is not possible to post this IDoc"
+  ],
+  "71": [
+    "Success",
+    "Inbound IDoc reloaded from archive. Can't be processed"
+  ],
+  "30": [
+    "Success",
+    "Outbound IDoc ready for dispatch (ALE service)"
+  ],
+  "74": [
+    "Success",
+    "Inbound IDoc manually created by WE19 test tool"
+  ],
+  "31": [
+    "Error",
+    "no further processing"
+  ],
+  "32": [
+    "Success",
+    "Outbound IDoc was edited"
+  ],
+  "33": [
+    "Success",
+    "Original of an IDoc which was edited. It is not possible to post this IDoc"
+  ],
+  "35": [
+    "Success",
+    "IDoc reloaded from archive. Can't be processed"
+  ],
+  "36": [
+    "Error",
+    "Timeout error on Electronic signature not performed (It's an error status)"
+  ],
+  "37": [
+    "Error",
+    "Erroneous control record (for example, \"reference\" field should be blank for outbound IDocs)"
+  ],
+  "38": [
+    "Success",
+    "IDoc archived"
+  ],
+  "39": [
+    "Success",
+    "Arrival of IDOC in target system confirmed"
+  ],
+  "40": [
+    "Error",
+    "Application document not created in target system (It's an error status)"
+  ],
+  "41": [
+    "Success",
+    "Application document created in target system"
+  ],
+  "42": [
+    "Success",
+    "Outbound IDoc manually created by WE19 test tool"
+  ]
+}

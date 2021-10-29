@@ -1,0 +1,116 @@
+plugins {
+    id 'java-library'
+    id 'java'
+    id 'eclipse' // optional, for Eclipse project
+    id 'idea'     // optional, for IntelliJ IDEA project
+    id "org.sonarqube" version "2.8"
+    id "checkstyle"
+    id "jacoco"
+    //id 'org.springframework.boot' version '2.1.13.RELEASE'
+    //id 'io.spring.dependency-management' version '1.0.9.RELEASE'
+}
+
+//sonarqube properties
+sonarqube {
+    properties {
+        property 'sonar.projectName', 'google adapter by cs'
+    }
+}
+
+group 'com.google.adapter'
+version '0.0.1'
+
+sourceCompatibility = JavaVersion.VERSION_1_8
+targetCompatibility = JavaVersion.VERSION_1_8
+
+repositories {
+    mavenCentral()
+    maven { url "https://dl.bintray.com/mockito/maven" }
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+dependencies {
+    //implementation 'org.springframework.boot:spring-boot-starter-actuator'
+    //implementation 'org.springframework.boot:spring-boot-starter-web'
+    api 'org.apache.commons:commons-math3:3.6.1'
+    implementation 'com.google.guava:guava:28.0-jre'
+    testCompile group: 'org.hamcrest', name: 'hamcrest', version: '2.1'
+    compile files('libs/sapjco3.jar')
+    compile files('libs/sapidoc3.jar')
+    compile group: 'org.slf4j', name: 'slf4j-api', version: '1.7.30'
+    compile('org.apache.lucene:lucene-core:7.1.0')
+    compile('org.apache.lucene:lucene-queryparser:7.1.0')
+    compile('org.apache.lucene:lucene-analyzers-common:7.1.0')
+
+    compile group: 'io.searchbox', name: 'jest', version: '5.3.4'
+    compile('com.fasterxml.jackson.core:jackson-core:2.9.4')
+
+    compile group: 'org.ehcache', name: 'ehcache', version: '3.8.1'
+    compile("javax.cache:cache-api:1.1.0")
+
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.1.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.1.0'
+
+    testCompile 'org.mockito:mockito-junit-jupiter:2.22.0'  //mockito-core is implicitly added
+    testCompile 'org.assertj:assertj-core:3.9.1'
+
+    compile group: 'com.fasterxml.jackson.core', name: 'jackson-annotations', version: '2.9.4'
+    compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.9.4'
+
+    compile group: 'javax.inject', name: 'javax.inject', version: '1'
+    compile group: 'javax.validation', name: 'validation-api', version: '2.0.0.Final'
+
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.1.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.1.0'
+
+    testCompile 'org.powermock:powermock-module-junit4:2.0.2'
+    testCompile 'org.powermock:powermock-api-mockito2:2.0.2'
+
+
+}
+
+jacocoTestReport {
+    reports {
+        xml.enabled false
+        csv.enabled false
+        html.destination file("${buildDir}/jacocoHtml")
+    }
+}
+
+jacocoTestCoverageVerification {
+    violationRules {
+        rule {
+            limit {
+                minimum = 0.60
+            }
+        }
+    }
+}
+// to run coverage verification during the build (and fail when appropriate)
+check.dependsOn jacocoTestCoverageVerification
+
+checkstyle {
+    configFile file("${project.rootDir}/config/checkstyle/checkstyle-custom.xml")
+    sourceSets = [sourceSets.main]
+    toolVersion "8.23"
+}
+
+task verify {
+    dependsOn "checkstyleMain", "checkstyleTest", "compileTestJava"
+}
+
+/* compileJava {
+    options.compilerArgs << "-Xlint:unchecked" << "-Xlint:deprecation"
+} */
+
+test {
+    useJUnitPlatform()
+    maxHeapSize = '1G'
+}
+
+javadoc {
+    source = sourceSets.main.allJava
+}
+

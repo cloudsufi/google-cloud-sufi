@@ -1,0 +1,57 @@
+{
+	"POHEADER": 
+	{
+		"COMP_CODE": "1010",
+		"DOC_TYPE": "NB",
+		"ITEM_INTVL": "00000",
+		"VENDOR": "0010300001",
+		"PMNTTRMS": "0004",
+		"DSCNT1_TO": "0",
+		"DSCNT2_TO": "0",
+		"DSCNT3_TO": "0",
+		"DSCT_PCT1": "0.000",
+		"DSCT_PCT2": "0.000",
+		"PURCH_ORG": "1010",
+		"PUR_GROUP": "001",
+		"CURRENCY": "EUR",
+		"CURRENCY_ISO": "EUR"
+	},
+
+	"POHEADERX": 
+	{
+		"COMP_CODE": "X",
+		"ITEM_INTVL": "X",
+		"VENDOR": "X",
+		"PMNTTRMS": "X",
+		"PURCH_ORG": "X",
+		"PUR_GROUP": "X",
+		"CURRENCY": "X",
+		"CURRENCY_ISO": "X"
+	},
+
+	"POITEM": 
+	[
+		{
+			"PO_ITEM": "00010",
+			"MATERIAL": "SG21",
+			"PLANT": "1010",
+			"MATL_GROUP": "L003",
+			"QUANTITY": "10.000",
+			"NET_PRICE": "1.000000000",
+			"PERIOD_IND_EXPIRATION_DATE": "D"
+		}
+	],
+
+	"POITEMX": 
+	[
+		
+		{
+			"PO_ITEM": "00010",
+			"MATERIAL": "X",
+			"PLANT": "X",
+			"MATL_GROUP": "X",
+			"QUANTITY": "X",
+			"NET_PRICE": "X"
+		}
+	]
+}

@@ -1,0 +1,245 @@
+{
+  "REQUEST_DETAIL": [
+    {
+      "name": "DELIMITER",
+      "displayName": "DELIMITER",
+      "defaultValue": "SPACE",
+      "required": true,
+      "length": 1,
+      "decimals": 0,
+      "description": "Sign for indicating field limits in DATA",
+      "type": "string"
+    },
+    {
+      "name": "NO_DATA",
+      "displayName": "NO_DATA",
+      "defaultValue": "SPACE",
+      "required": true,
+      "length": 1,
+      "decimals": 0,
+      "description": "If <> SPACE, only FIELDS is filled",
+      "type": "string"
+    },
+    {
+      "name": "QUERY_TABLE",
+      "displayName": "QUERY_TABLE",
+      "required": false,
+      "length": 30,
+      "decimals": 0,
+      "description": "Table read",
+      "type": "string"
+    },
+    {
+      "name": "ROWCOUNT",
+      "displayName": "ROWCOUNT",
+      "defaultValue": "0",
+      "required": true,
+      "length": 4,
+      "decimals": 0,
+      "type": "integer"
+    },
+    {
+      "name": "ROWSKIPS",
+      "displayName": "ROWSKIPS",
+      "defaultValue": "0",
+      "required": true,
+      "length": 4,
+      "decimals": 0,
+      "type": "integer"
+    },
+    {
+      "name": "DATA",
+      "displayName": "DATA",
+      "required": false,
+      "length": 0,
+      "decimals": 0,
+      "description": "Data read (out)",
+      "type": "array",
+      "properties": [
+        {
+          "name": "WA",
+          "description": "Character field length 512",
+          "decimals": 0,
+          "length": 512,
+          "type": "string",
+          "displayName": "WA",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "FIELDS",
+      "displayName": "FIELDS",
+      "required": false,
+      "length": 0,
+      "decimals": 0,
+      "description": "Names (in) and structure (out) of fields read",
+      "type": "array",
+      "properties": [
+        {
+          "name": "FIELDNAME",
+          "description": "Field Name",
+          "decimals": 0,
+          "length": 30,
+          "type": "string",
+          "displayName": "FIELDNAME",
+          "required": true
+        },
+        {
+          "name": "OFFSET",
+          "description": "Offset of a field",
+          "decimals": 0,
+          "length": 6,
+          "type": "number",
+          "displayName": "OFFSET",
+          "required": true
+        },
+        {
+          "name": "LENGTH",
+          "description": "Length (No. of Characters)",
+          "decimals": 0,
+          "length": 6,
+          "type": "number",
+          "displayName": "LENGTH",
+          "required": true
+        },
+        {
+          "name": "TYPE",
+          "description": "ABAP data type (C,D,N,...)",
+          "decimals": 0,
+          "length": 1,
+          "type": "string",
+          "displayName": "TYPE",
+          "required": true
+        },
+        {
+          "name": "FIELDTEXT",
+          "description": "Short Description of Repository Objects",
+          "decimals": 0,
+          "length": 60,
+          "type": "string",
+          "displayName": "FIELDTEXT",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "OPTIONS",
+      "displayName": "OPTIONS",
+      "required": false,
+      "length": 0,
+      "decimals": 0,
+      "description": "Selection entries, \"WHERE clauses\" (in)",
+      "type": "array",
+      "properties": [
+        {
+          "name": "TEXT",
+          "description": "Text line of a message",
+          "decimals": 0,
+          "length": 72,
+          "type": "string",
+          "displayName": "TEXT",
+          "required": true
+        }
+      ]
+    }
+  ],
+  "RESPONSE_DETAIL": [
+    {
+      "name": "DATA",
+      "displayName": "DATA",
+      "required": false,
+      "length": 0,
+      "decimals": 0,
+      "description": "Data read (out)",
+      "type": "array",
+      "properties": [
+        {
+          "name": "WA",
+          "description": "Character field length 512",
+          "decimals": 0,
+          "length": 512,
+          "type": "string",
+          "displayName": "WA",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "FIELDS",
+      "displayName": "FIELDS",
+      "required": false,
+      "length": 0,
+      "decimals": 0,
+      "description": "Names (in) and structure (out) of fields read",
+      "type": "array",
+      "properties": [
+        {
+          "name": "FIELDNAME",
+          "description": "Field Name",
+          "decimals": 0,
+          "length": 30,
+          "type": "string",
+          "displayName": "FIELDNAME",
+          "required": true
+        },
+        {
+          "name": "OFFSET",
+          "description": "Offset of a field",
+          "decimals": 0,
+          "length": 6,
+          "type": "number",
+          "displayName": "OFFSET",
+          "required": true
+        },
+        {
+          "name": "LENGTH",
+          "description": "Length (No. of Characters)",
+          "decimals": 0,
+          "length": 6,
+          "type": "number",
+          "displayName": "LENGTH",
+          "required": true
+        },
+        {
+          "name": "TYPE",
+          "description": "ABAP data type (C,D,N,...)",
+          "decimals": 0,
+          "length": 1,
+          "type": "string",
+          "displayName": "TYPE",
+          "required": true
+        },
+        {
+          "name": "FIELDTEXT",
+          "description": "Short Description of Repository Objects",
+          "decimals": 0,
+          "length": 60,
+          "type": "string",
+          "displayName": "FIELDTEXT",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "OPTIONS",
+      "displayName": "OPTIONS",
+      "required": false,
+      "length": 0,
+      "decimals": 0,
+      "description": "Selection entries, \"WHERE clauses\" (in)",
+      "type": "array",
+      "properties": [
+        {
+          "name": "TEXT",
+          "description": "Text line of a message",
+          "decimals": 0,
+          "length": 72,
+          "type": "string",
+          "displayName": "TEXT",
+          "required": true
+        }
+      ]
+    }
+  ]
+}
